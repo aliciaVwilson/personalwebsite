@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -76,3 +77,121 @@ body {
   -ms-font-feature-settings: "lnum";
   -webkit-font-feature-settings: "lnum";
   font-feature-settings: "lnum"; }
+
+svg {
+  display: inline;
+  margin: 10px 0px 10px 0px; }
+
+.navigation-bar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #00C3A1;
+  padding: 15px 80px; }
+
+.nav-link {
+  color: #FCFDFF;
+  font-size: 1.6em;
+  margin-right: 50px; }
+
+.nav_container {
+  background-color: #00C3A1;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 80px; }
+
+.navbar-light .navbar-nav .active > .nav-link {
+  color: #FCFDFF; }
+
+body, html {
+  height: 100%; }
+
+.parallax {
+  /* The image used */
+  background-image: url("media/imgs/image-with-overlay.jpg");
+  /* Full height */
+  height: 90%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 110px 100px 0px 0px; }
+
+#coding-image {
+  height: 50%;
+  background-image: url("media/imgs/codingimg.jpg");
+  background-position: center; }
+
+.call-to-action {
+  color: #FCFDFF;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right; }
+  .call-to-action h1 {
+    font-size: 6em; }
+  .call-to-action h2 {
+    font-size: 4em; }
+  .call-to-action .button {
+    margin-top: 30px;
+    width: 250px;
+    padding: 20px;
+    background-color: #00C3A1;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center; }
+    .call-to-action .button a {
+      font-size: 2em;
+      text-decoration: none;
+      color: #FCFDFF; }
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  background-color: #007E7C;
+  color: #FCFDFF; }
+  .about-me .about-me-content {
+    width: 98%;
+    display: flex;
+    justify-content: space-between; }
+    .about-me .about-me-content .headshot {
+      align-self: flex-end;
+      margin: 100px 0px 30px 0px;
+      background-image: url("media/imgs/resumé-photo.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 40%;
+      height: 382px;
+      box-shadow: 7px 7px 4px #153341; }
+    .about-me .about-me-content .mini-call-to-action {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 40%;
+      margin: 55px 100px 30px 0px; }
+      .about-me .about-me-content .mini-call-to-action h3 {
+        font-size: 3em; }
+      .about-me .about-me-content .mini-call-to-action p {
+        margin-top: 20px;
+        width: 100%;
+        line-height: 1.45em;
+        font-size: 1.5em; }
+      .about-me .about-me-content .mini-call-to-action .button {
+        margin-top: 30px;
+        width: 250px;
+        padding: 20px;
+        background-color: #153341;
+        border-radius: 7px;
+        display: flex;
+        justify-content: center; }
+        .about-me .about-me-content .mini-call-to-action .button a {
+          font-size: 2em;
+          text-decoration: none;
+          color: #FCFDFF; }
+
+body {
+  font-family: 'charter', serif;
+  font-size: 1em; }

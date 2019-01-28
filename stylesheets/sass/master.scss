@@ -4,4 +4,11 @@
 @import "helpers/reset";
 @import "helpers/typography";
 
+@import "components/navbar";
+@import "components/parallax";
+
 // --- MASTER CONTROLS ---
+body{
+  font-family: 'charter', serif;
+  font-size: 1em;
+}
