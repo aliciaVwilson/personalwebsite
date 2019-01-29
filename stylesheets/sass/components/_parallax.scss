@@ -1,13 +1,3 @@
-// *** Parallax scrolling ***
-
-
-
-
-
-
-
-
-// @media screen ()
 
 body, html {
   height: 100%;
@@ -64,56 +54,3 @@ body, html {
     }
   }
 }
-
-
-.about-me{
-  display: flex;
-  justify-content: center;
-  background-color: #007E7C;
-  color: #FCFDFF;
-  .about-me-content{
-    width: 98%;
-    display: flex;
-    justify-content: space-between;
-    .headshot{
-      align-self: flex-end;
-      margin: 100px 0px 30px 0px;
-      background-image: url('media/imgs/resumé-photo.jpg');
-      background-size: cover;
-      background-repeat: no-repeat;
-      width: 40%;
-      height: 382px;
-      box-shadow: 7px 7px 4px #153341;
-    }
-    .mini-call-to-action{
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      width: 40%;
-      margin: 55px 100px 30px 0px;
-      h3{
-        font-size: 3em;
-      }
-      p{
-        margin-top: 20px;
-        width: 100%;
-        line-height: 1.45em;
-        font-size: 1.5em;
-      }
-      .button{
-        margin-top: 30px;
-        width: 250px;
-        padding: 20px;
-        background-color: #153341;
-        border-radius: 7px;
-        display: flex;
-        justify-content: center;
-        a{
-          font-size: 2em;
-          text-decoration: none;
-          color: #FCFDFF;
-        }//a
-      }//button
-    }//mini-call-to-action
-  }//about-me-content
-}// about me

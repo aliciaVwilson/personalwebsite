@@ -27,5 +27,13 @@ svg{
 
 
 .navbar-light .navbar-nav .active>.nav-link{
+  color: #153341;
+}
+
+.navbar-light .navbar-nav .nav-link {
   color: #FCFDFF;
+
+  &:hover{
+    
+  }
 }

@@ -100,6 +100,9 @@ svg {
   padding: 0px 80px; }
 
 .navbar-light .navbar-nav .active > .nav-link {
+  color: #153341; }
+
+.navbar-light .navbar-nav .nav-link {
   color: #FCFDFF; }
 
 body, html {
@@ -163,6 +166,7 @@ body, html {
       background-image: url("media/imgs/resumé-photo.jpg");
       background-size: cover;
       background-repeat: no-repeat;
+      background-position: right;
       width: 40%;
       height: 382px;
       box-shadow: 7px 7px 4px #153341; }
