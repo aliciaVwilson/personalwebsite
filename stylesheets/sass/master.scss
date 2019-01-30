@@ -4,8 +4,10 @@
 @import "helpers/reset";
 @import "helpers/typography";
 
+@import "components/vars";
 @import "components/navbar";
 @import "components/parallax";
+@import "components/aboutMe";
 
 // --- MASTER CONTROLS ---
 body{

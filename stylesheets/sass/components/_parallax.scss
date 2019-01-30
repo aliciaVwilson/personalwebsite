@@ -1,56 +1,81 @@
 
-body, html {
-  height: 100%;
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  //same
 }
 
-.parallax {
-  /* The image used */
-  background-image: url('media/imgs/image-with-overlay.jpg');
-
-  /* Full height */
-  height: 90%;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 100px;
-  display: flex;
-  justify-content: flex-end;
-  padding: 110px 100px 0px 0px;
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  //same
 }
 
-#coding-image{
-  height: 50%;
-  background-image: url('media/imgs/codingimg.jpg');
-  background-position: center;
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  //same
 }
 
-.call-to-action{
-  color: #FCFDFF;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  text-align: right;
-  h1{
-    font-size: 6em;
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  body, html {
+    height: 100%;
   }
-  h2{
-    font-size: 4em;
-  }
-  .button{
-    margin-top: 30px;
-    width: 250px;
-    padding: 20px;
-    background-color: #00C3A1;
-    border-radius: 7px;
+
+  .parallax {
+    /* The image used */
+    background-image: url('media/imgs/image-with-overlay.jpg');
+
+    /* Full height */
+    height: 90%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
     display: flex;
-    justify-content: center;
-    a{
-      font-size: 2em;
-      text-decoration: none;
-      color: #FCFDFF;
+    justify-content: flex-end;
+    padding: 110px 100px 0px 0px;
+  }
+
+  #coding-image{
+    height: 50%;
+    background-image: url('media/imgs/codingimg.jpg');
+    background-position: center;
+  }
+
+  .call-to-action{
+    color: #FCFDFF;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    h1{
+      font-size: 6em;
+    }
+    h2{
+      font-size: 4em;
+    }
+    .button{
+      margin-top: 30px;
+      width: 250px;
+      padding: 20px;
+      background-color: #00C3A1;
+      border-radius: 7px;
+      display: flex;
+      justify-content: center;
+      transition: .5s;
+
+      &:hover{
+        background-color: $pw-hover;
+        transition: 1s;
+      }
+      a{
+        font-size: 2em;
+        text-decoration: none;
+        color: #FCFDFF;
+      }
     }
   }
 }
