@@ -105,7 +105,54 @@ svg {
 .navbar-light .navbar-nav .nav-link {
   color: #FCFDFF; }
 
-@media (min-width: 1200px) {
+body, html {
+  height: 100%; }
+
+.parallax {
+  /* The image used */
+  background-image: url("media/imgs/image-with-overlay.jpg");
+  /* Full height */
+  min-height: 90%;
+  /* Create the parallax scrolling effect */
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 110px 100px 0px 0px; }
+  .parallax .call-to-action {
+    color: #FCFDFF;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right; }
+    .parallax .call-to-action h1 {
+      font-size: 6em; }
+    .parallax .call-to-action h2 {
+      font-size: 4em; }
+    .parallax .call-to-action .button {
+      margin-top: 30px;
+      width: 250px;
+      padding: 20px;
+      background-color: #00C3A1;
+      border-radius: 7px;
+      display: flex;
+      justify-content: center;
+      transition: .5s; }
+      .parallax .call-to-action .button:hover {
+        background-color: #ADC0C3;
+        transition: 1s; }
+      .parallax .call-to-action .button a {
+        font-size: 2em;
+        text-decoration: none;
+        color: #FCFDFF; }
+
+#coding-image {
+  height: 70%;
+  background-image: url("media/imgs/codingimg.jpg");
+  background-position: center; }
+
+@media (min-width: 992px) {
   body, html {
     height: 100%; }
   .parallax {
@@ -123,7 +170,7 @@ svg {
     justify-content: flex-end;
     padding: 110px 100px 0px 0px; }
   #coding-image {
-    height: 50%;
+    height: 60%;
     background-image: url("media/imgs/codingimg.jpg");
     background-position: center; }
   .call-to-action {
@@ -159,32 +206,33 @@ svg {
   background-color: #153341;
   color: #FCFDFF; }
   .about-me .about-me-content {
-    width: 98%;
+    width: 94%;
     display: flex;
+    flex-direction: column;
     justify-content: space-between; }
     .about-me .about-me-content .headshot {
       align-self: flex-end;
-      margin: 100px 0px 30px 0px;
+      margin: 50px 0px 30px 0px;
       background-image: url("media/imgs/resumé-photo.jpg");
       background-size: cover;
       background-repeat: no-repeat;
-      background-position: right;
-      width: 40%;
-      height: 382px;
+      background-position: top right;
+      width: 100%;
+      height: 450px;
       box-shadow: 7px 7px 4px #153341; }
     .about-me .about-me-content .mini-call-to-action {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      width: 40%;
-      margin: 55px 100px 30px 0px; }
+      width: 100%;
+      margin: 55px 100px 80px 0px; }
       .about-me .about-me-content .mini-call-to-action h3 {
         font-size: 3em; }
       .about-me .about-me-content .mini-call-to-action p {
         margin-top: 20px;
         width: 100%;
         line-height: 1.45em;
-        font-size: 1.5em; }
+        font-size: 2em; }
       .about-me .about-me-content .mini-call-to-action .button {
         margin-top: 30px;
         width: 250px;
@@ -202,7 +250,7 @@ svg {
           text-decoration: none;
           color: #FCFDFF; }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .about-me {
     display: flex;
     justify-content: center;
@@ -211,6 +259,7 @@ svg {
     .about-me .about-me-content {
       width: 98%;
       display: flex;
+      flex-direction: row;
       justify-content: space-between; }
       .about-me .about-me-content .headshot {
         align-self: flex-end;
@@ -252,6 +301,93 @@ svg {
             text-decoration: none;
             color: #FCFDFF; } }
 
+.info-snippet2 {
+  width: 100vw;
+  background-color: #007E7C;
+  padding: 15px; }
+  .info-snippet2 .mini-call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%; }
+    .info-snippet2 .mini-call-to-action h3 {
+      margin: 10px;
+      font-size: 3em; }
+    .info-snippet2 .mini-call-to-action .list-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 20px; }
+      .info-snippet2 .mini-call-to-action .list-container .knowledge-list {
+        margin-top: 40px; }
+        .info-snippet2 .mini-call-to-action .list-container .knowledge-list h4 {
+          font-size: 2.2em; }
+        .info-snippet2 .mini-call-to-action .list-container .knowledge-list ul li {
+          margin-top: 10px;
+          width: 100%;
+          line-height: 1.3em;
+          font-size: 1.5em; }
+    .info-snippet2 .mini-call-to-action .button {
+      margin: 30px;
+      width: 250px;
+      padding: 20px;
+      background-color: #00C3A1;
+      border-radius: 7px;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      transition: .5s; }
+      .info-snippet2 .mini-call-to-action .button:hover {
+        background-color: #ADC0C3;
+        transition: 1s; }
+      .info-snippet2 .mini-call-to-action .button a {
+        font-size: 2em;
+        text-decoration: none;
+        color: #FCFDFF; }
+
+@media (min-width: 768px) {
+  .info-snippet2 {
+    background-color: #007E7C; }
+    .info-snippet2 .mini-call-to-action {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%; }
+      .info-snippet2 .mini-call-to-action h3 {
+        margin: 20px 0px 0px 0px;
+        font-size: 4em; }
+      .info-snippet2 .mini-call-to-action .list-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; }
+        .info-snippet2 .mini-call-to-action .list-container .knowledge-list {
+          padding: 10px 50px 50px 50px; }
+          .info-snippet2 .mini-call-to-action .list-container .knowledge-list h4 {
+            font-size: 1.75em; }
+          .info-snippet2 .mini-call-to-action .list-container .knowledge-list ul li {
+            margin-top: 10px;
+            width: 100%;
+            line-height: 1em;
+            font-size: 1em; }
+      .info-snippet2 .mini-call-to-action .button {
+        margin: 30px;
+        width: 250px;
+        padding: 20px;
+        background-color: #00C3A1;
+        border-radius: 7px;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        transition: .5s; }
+        .info-snippet2 .mini-call-to-action .button:hover {
+          background-color: #ADC0C3;
+          transition: 1s; }
+        .info-snippet2 .mini-call-to-action .button a {
+          font-size: 2em;
+          text-decoration: none;
+          color: #FCFDFF; } }
+
 body {
   font-family: 'charter', serif;
-  font-size: 1em; }
+  font-size: 1em;
+  color: #FCFDFF; }

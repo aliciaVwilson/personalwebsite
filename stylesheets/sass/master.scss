@@ -8,9 +8,11 @@
 @import "components/navbar";
 @import "components/parallax";
 @import "components/aboutMe";
+@import "components/info-snippet2";
 
 // --- MASTER CONTROLS ---
 body{
   font-family: 'charter', serif;
   font-size: 1em;
+  color: $pw-white;
 }

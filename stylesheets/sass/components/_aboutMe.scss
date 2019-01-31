@@ -5,26 +5,27 @@
   background-color: #153341;
   color: #FCFDFF;
   .about-me-content{
-    width: 98%;
+    width: 94%;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     .headshot{
       align-self: flex-end;
-      margin: 100px 0px 30px 0px;
+      margin: 50px 0px 30px 0px;
       background-image: url('media/imgs/resumé-photo.jpg');
       background-size: cover;
       background-repeat: no-repeat;
-      background-position: right;
-      width: 40%;
-      height: 382px;
+      background-position: top right;
+      width: 100%;
+      height: 450px;
       box-shadow: 7px 7px 4px #153341;
     }
     .mini-call-to-action{
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      width: 40%;
-      margin: 55px 100px 30px 0px;
+      width: 100%;
+      margin: 55px 100px 80px 0px;
       h3{
         font-size: 3em;
       }
@@ -32,7 +33,7 @@
         margin-top: 20px;
         width: 100%;
         line-height: 1.45em;
-        font-size: 1.5em;
+        font-size: 2em;
       }
       .button{
         margin-top: 30px;
@@ -67,16 +68,6 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-  //same
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-  //same
-}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
   .about-me{
     display: flex;
     justify-content: center;
@@ -85,6 +76,7 @@
     .about-me-content{
       width: 98%;
       display: flex;
+      flex-direction: row;
       justify-content: space-between;
       .headshot{
         align-self: flex-end;
@@ -136,4 +128,14 @@
       }//mini-call-to-action
     }//about-me-content
   }// about me
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  //same
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  //same
 }

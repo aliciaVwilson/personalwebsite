@@ -1,6 +1,119 @@
 // *** INFORMATION PARTIAL 2 ***
 
 .info-snippet2{
-  height: 500px;
-  
+  width: 100vw;
+  background-color: #007E7C;
+  padding: 15px;
+  .mini-call-to-action{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    h3{
+      margin: 10px;
+      font-size: 3em;
+    }
+    .list-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      .knowledge-list{
+        margin-top: 40px;
+        h4{
+          font-size: 2.2em;
+        }
+        ul{
+          li{
+            margin-top: 10px;
+            width: 100%;
+            line-height: 1.3em;
+            font-size: 1.5em;
+          }
+        }
+      }
+    }
+    .button{
+      margin: 30px;
+      width: 250px;
+      padding: 20px;
+      background-color: $pw-mint;
+      border-radius: 7px;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      transition: .5s;
+
+      &:hover{
+        background-color: $pw-hover;
+        transition: 1s;
+      }
+
+      a{
+        font-size: 2em;
+        text-decoration: none;
+        color: #FCFDFF;
+      }//a
+    }//button
+  }//mini-call-to-action
+  .familyImg{
+
+  }
+}
+
+@media (min-width: 768px) {
+  .info-snippet2{
+    background-color: #007E7C;
+    .mini-call-to-action{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      h3{
+        margin: 20px 0px 0px 0px;
+        font-size: 4em;
+      }
+      .list-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .knowledge-list{
+          padding: 10px 50px 50px 50px;
+          h4{
+            font-size: 1.75em;
+          }
+          ul{
+            li{
+              margin-top: 10px;
+              width: 100%;
+              line-height: 1em;
+              font-size: 1em;
+            }
+          }
+        }
+      }
+      .button{
+        margin: 30px;
+        width: 250px;
+        padding: 20px;
+        background-color: $pw-mint;
+        border-radius: 7px;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        transition: .5s;
+
+        &:hover{
+          background-color: $pw-hover;
+          transition: 1s;
+        }
+
+        a{
+          font-size: 2em;
+          text-decoration: none;
+          color: #FCFDFF;
+        }//a
+      }//button
+    }//mini-call-to-action
+  }
 }
